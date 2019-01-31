@@ -74,7 +74,7 @@ resource "aws_instance" "example" {
   terraform init
   ```
   stdout:
-  ```sh
+  ```
     Initializing provider plugins...
   - Checking for available provider plugins on https://releases.hashicorp.com...
   - Downloading plugin for provider "aws" (1.57.0)...
@@ -130,5 +130,12 @@ The resources that were imported are shown above. These resources are now in
 your Terraform state and will henceforth be managed by Terraform.
 ```
 
+Now we have terraform.tfstate created with current configuration of imported instance.
+We can read it by running:
+```sh
+terraform show
+```
+
+There if we should edit main.tf according to terraform.tfstate, if we will change some configuration and run terraform plan - it will show us what changes will happen if we will apply edited main.tf configuration.
   
   
