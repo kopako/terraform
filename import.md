@@ -1,10 +1,4 @@
-A new EC2-Nano instance is created via the AWSCLI interface
- Either Terraform import or Terraforming are used to terraformize your instance
-AMI and Instance Type are changed via the config files
-Documentation has been created to the KnowledgeofThousandYears and a pull request has been sent with the new .md file in it, and rdg5 added as revieweer.
-
 # How to import existing ec2 instance from aws.
-====
 
 ### AWS CLI
 
