@@ -3,17 +3,16 @@ A new EC2-Nano instance is created via the AWSCLI interface
 AMI and Instance Type are changed via the config files
 Documentation has been created to the KnowledgeofThousandYears and a pull request has been sent with the new .md file in it, and rdg5 added as revieweer.
 
-How to import existing ec2 instance from aws.
+# How to import existing ec2 instance from aws.
 ====
 
-AWS CLI
----
+### AWS CLI
 
 - Make sure you have AWS CLI
   ```sh
   $ aws --version
   ```
-  Output should be something like
+  Output should be something like (there and further stdout)
   ```sh
   aws-cli/1.16.96 Python/2.7.10 Darwin/17.7.0 botocore/1.12.86
   ```
@@ -21,22 +20,28 @@ AWS CLI
   ```sh
   cat ~/.aws/credentials
   ```
-  output
+  stdout:
   ```sh
   [default]
   aws_access_key_id = AKKNKXF3KGBDQ5BFFVQ
   aws_secret_access_key = t72aLybwhs+PhJPSpk/c23pzKJ1DBO6HFrZFLki
   ```
 
-Terraform
----
+### Terraform
 
 - Make sure you've terraform
   ```sh
   terraform -v
   ```
-  out:
+  stdout:
   ```sh
   Terraform v0.11.11
   ```
+## Import instance
+
+### For import you need an Instance id and region where i runs.
+ 
+ - Go to the [AWS Management Console](https://console.aws.amazon.com) -> Service -> EC2 (choose your region) -> [instances](https://eu-west-2.console.aws.amazon.com/ec2/v2/home?region=eu-west-2#Instances:)
+ 
+
   
